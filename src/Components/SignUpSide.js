@@ -44,7 +44,7 @@ export default function SignUpSide() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/signup', {
+      const response = await fetch('https://stubuddies-server.onrender.com/api/auth/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ firstName, lastName, age, gender, username, email, phoneNumber, password, termsAccepted }),
