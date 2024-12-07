@@ -23,7 +23,7 @@ export default function SignInSide() {
     const password = event.target.password.value;
 
     try {
-      const response = await fetch('http://https://stubuddies-server.onrender.com/api/auth/signin/api/auth/signin', {
+      const response = await fetch('https://stubuddies-server.onrender.com/api/auth/signin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
